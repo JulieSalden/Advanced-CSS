@@ -1,0 +1,66 @@
+.link-container {
+  float: right;
+  margin-bottom: 200px;
+}
+
+.social-media-links {
+  border: solid 0px;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(200px);
+
+  a:visited {
+    text-decoration: none;
+    color: $basicLightColor;
+  }
+
+  .blog {
+    @include socials(#e17b77);
+
+    ::before {
+      @include icon(900, "Font Awesome 6 Free", "\f5fc");
+    }
+  }
+
+  .twitter {
+    @include socials(#00aced);
+
+    ::before {
+      @include icon(400, "Font Awesome 6 Brands", "\f099");
+    }
+  }
+
+  .linked-in {
+    @include socials(#007bb6);
+
+    ::before {
+      @include icon(400, "Font Awesome 6 Brands", "\f0e1");
+    }
+  }
+
+  .facebook {
+    @include socials(#3b5998);
+
+    ::before {
+      @include icon(400, "Font Awesome 6 Brands", "\f39e");
+    }
+  }
+
+  .github {
+    @include socials(#333);
+
+    ::before {
+      @include icon(400, "Font Awesome 6 Brands", "\f09b");
+    }
+  }
+}
+
+.blog:hover,
+.facebook:hover,
+.github:hover,
+.twitter:hover,
+.linked-in:hover {
+  @include hover;
+}

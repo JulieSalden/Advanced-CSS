@@ -1,0 +1,47 @@
+.container-card {
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.card {
+  text-align: center;
+  border: 0px;
+  border-radius: 50px;
+  box-shadow: 0px 20px 40px 0px rgb(132, 131, 131);
+  background: linear-gradient(
+    $basicLightColor 0%,
+    $basicLightColor 66%,
+    $footerTestimonial 66%,
+    $footerTestimonial 100%
+  );
+  padding-bottom: 60px;
+
+  img {
+    width: 160px;
+    height: 160px;
+    border: 8px solid $basicLightColor;
+    border-radius: 50%;
+  }
+
+  p {
+    @include text(1.8em, normal);
+    line-height: 50px;
+    font-weight: 500;
+    text-align: left;
+    padding: 50px 40px 30px 40px;
+    color: $basicDarkColor;
+  }
+
+  h1 {
+    @include text(2em, 2px);
+    text-transform: uppercase;
+    color: lighten($basicDarkColor, 100);
+  }
+
+  a {
+    @include text(1.4em, 1px);
+    text-decoration: none;
+    color: lighten($basicDarkColor, 28);
+  }
+}

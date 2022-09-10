@@ -1,0 +1,261 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container-card {
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.card {
+  text-align: center;
+  border: 0px;
+  border-radius: 50px;
+  box-shadow: 0px 20px 40px 0px rgb(132, 131, 131);
+  background: linear-gradient(#fff 0%, #fff 66%, #686de0 66%, #686de0 100%);
+  padding-bottom: 60px;
+}
+.card img {
+  width: 160px;
+  height: 160px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+}
+.card p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  letter-spacing: normal;
+  line-height: 50px;
+  font-weight: 500;
+  text-align: left;
+  padding: 50px 40px 30px 40px;
+  color: rgb(74, 74, 74);
+}
+.card h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+.card a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #919191;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: 200px;
+  }
+}
+
+.grid-item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.grid-item .front-img {
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 1;
+}
+.grid-item .hover-img {
+  position: abosolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(74, 74, 74);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-item .hover-img .read-more {
+  background-color: #fff;
+  color: rgb(74, 74, 74);
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  letter-spacing: normal;
+  font-weight: bold;
+}
+
+.grid-item .front-img:hover {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.link-container {
+  float: right;
+  margin-bottom: 200px;
+}
+
+.social-media-links {
+  border: solid 0px;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(200px);
+}
+.social-media-links a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.social-media-links .blog {
+  width: 100%;
+  height: 20%;
+  background-color: #e17b77;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  letter-spacing: normal;
+  color: #fff;
+}
+.social-media-links .blog ::before {
+  content: "\f5fc";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialized;
+  padding-left: 17px;
+  padding-right: 40px;
+}
+.social-media-links .twitter {
+  width: 100%;
+  height: 20%;
+  background-color: #00aced;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  letter-spacing: normal;
+  color: #fff;
+}
+.social-media-links .twitter ::before {
+  content: "\f099";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  display: inline-block;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialized;
+  padding-left: 17px;
+  padding-right: 40px;
+}
+.social-media-links .linked-in {
+  width: 100%;
+  height: 20%;
+  background-color: #007bb6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  letter-spacing: normal;
+  color: #fff;
+}
+.social-media-links .linked-in ::before {
+  content: "\f0e1";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  display: inline-block;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialized;
+  padding-left: 17px;
+  padding-right: 40px;
+}
+.social-media-links .facebook {
+  width: 100%;
+  height: 20%;
+  background-color: #3b5998;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  letter-spacing: normal;
+  color: #fff;
+}
+.social-media-links .facebook ::before {
+  content: "\f39e";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  display: inline-block;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialized;
+  padding-left: 17px;
+  padding-right: 40px;
+}
+.social-media-links .github {
+  width: 100%;
+  height: 20%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  letter-spacing: normal;
+  color: #fff;
+}
+.social-media-links .github ::before {
+  content: "\f09b";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  display: inline-block;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialized;
+  padding-left: 17px;
+  padding-right: 40px;
+}
+
+.blog:hover,
+.facebook:hover,
+.github:hover,
+.twitter:hover,
+.linked-in:hover {
+  transform: translateX(-200px);
+  transition: 0.5s ease-in-out;
+}
+
+body {
+  background: #c3cfe2;
+}/*# sourceMappingURL=styles.css.map */
